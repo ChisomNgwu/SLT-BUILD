@@ -1,0 +1,67 @@
+    /* File: src/components/CTAButton/CTAButton.css */
+
+    .button {
+
+    border-radius: 1px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    text-decoration: none;
+    }
+
+    /* Button Variants */
+    .button--primary {
+    background-color: var(--white-text);
+    color: var(--blue-text);
+    }
+
+    .button--primary:hover:not(:disabled) {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    
+    }
+
+    .button--secondary {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    }
+
+    .button--secondary:hover:not(:disabled) {
+    background-color: inherit;
+    color: var(--blue-text);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+    }
+
+
+    /* Button Sizes */
+    .button--small {
+    width: 117px;
+    height: 58px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-width: 1px;
+    }
+
+
+    .button--large {
+    width: 292px;
+    height: 52px;
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    }
+
+    /* Focus State */
+    .button:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    }
