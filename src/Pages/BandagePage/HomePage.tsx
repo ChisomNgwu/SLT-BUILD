@@ -3,6 +3,7 @@ import { useGetProductsQuery } from '../../features/products/productsApi';
 import { FaChevronDown, FaStar} from 'react-icons/fa';
 import { FaRegStar } from 'react-icons/fa6';
 import Button from  "../../components/Button";
+import Logo from "../../../public/logo.svg";
 import './HomePage.css';
 import './MediaQuery.css'; 
 
@@ -61,9 +62,9 @@ export default function HomePage () {
                 </div>
                 <div className="utility-content ">
                     <h6> Follow Us  :</h6>
-                    <img src="/src/assets/icons/instagram .png" alt="" />
-                    <img src="/src/assets/icons/youtube.png" alt="" />
-                    <img src="/src/assets/icons/facebook.png" alt="" />
+                    <img src="/src/assets/icons/instagram .png" alt="instagram" />
+                    <img src="/src/assets/icons/youtube.png" alt="youtube" />
+                    <img src="/src/assets/icons/facebook.png" alt="facebook" />
                     <img src="/src/assets/icons/twitter.png" alt="twitter" />
                 </div>
             </div>
@@ -71,7 +72,7 @@ export default function HomePage () {
             {/* navigation bar */}
             <nav className="navbar">
                 <span className="logo">
-                    <img src="/public/logo.svg" alt="logo" />
+                    <img src={Logo} alt="logo" />
                 </span>
                 
                 <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
