@@ -576,7 +576,7 @@
     width: 100%;
     max-width: 1440px;
     height: 640px;
-    background-image: url('/src/assets/images/cta\ background.png');
+    background-image: url('/public/cta\ background.png');
     background-size: cover;
     background-position: center;
 }

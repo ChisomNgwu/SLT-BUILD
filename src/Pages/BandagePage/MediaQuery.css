@@ -674,7 +674,7 @@
     .cta-section {
         max-width: 100%;
         height: auto;
-        background-image: url("/src/assets/images/cta\ mob\ bg.png");
+        background-image: url("/public/cta\ mob\ bg.png");
         background-size: cover;
         background-position: center;
     }
