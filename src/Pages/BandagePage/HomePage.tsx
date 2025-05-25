@@ -3,7 +3,10 @@ import { useGetProductsQuery } from '../../features/products/productsApi';
 import { FaChevronDown, FaStar} from 'react-icons/fa';
 import { FaRegStar } from 'react-icons/fa6';
 import Button from  "../../components/Button";
+
 import Logo from "../../../public/logo.svg";
+import Telephone from "../../assets/header/telephone.png";
+
 import './HomePage.css';
 import './MediaQuery.css'; 
 
@@ -40,15 +43,15 @@ export default function HomePage () {
     };
 
     return (
-        // home page container
-        // This is the main container for the home page 
+        // homepage container
+        // This is the main container for the homepage
         <section className="parent-container">
             <header className="header">
                         {/* utility bar */}
             <div className="utility-bar">
                 <div className="utility-content ">
                     <div className="content-box">
-                        <img src="/src/assets/icons/telephone.png" alt="telephone" />
+                        <img src={Telephone} alt="telephone" />
                         <h6> (225) 555-0118</h6>
                     </div>
 
