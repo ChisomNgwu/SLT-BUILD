@@ -71,7 +71,7 @@ export default function HomePage () {
             {/* navigation bar */}
             <nav className="navbar">
                 <span className="logo">
-                    <img src="/src/assets/icons/logo.svg" alt="logo" />
+                    <img src="/public/logo.svg" alt="logo" />
                 </span>
                 
                 <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -280,7 +280,7 @@ export default function HomePage () {
                     </div>
                 </div>
             </section>
-            
+
             {/* footer section */}
             <footer className="footer-section">
                 <div className="footer-container">
