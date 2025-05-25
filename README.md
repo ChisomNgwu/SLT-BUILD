@@ -1,3 +1,94 @@
+# 🛍️ eCommerce Webpage (React + TypeScript + RTK Query)
+
+This is a modern and responsive **eCommerce webpage** built with **React**, **TypeScript**, **Redux Toolkit**, **RTK Query**, and **vanilla CSS**. 
+A core feature of this app is a dynamic product section that fetches and displays product data from a custom API using RTK Query.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React + TypeScript
+- **State Management**: Redux Toolkit (RTK)
+- **API Data Fetching**: RTK Query
+- **Styling**: Vanilla CSS (modular and responsive)
+- **API**: Custom dummy API serving product data
+
+---
+
+## 🚀 Features
+
+- Product listing section with live API data
+- Global state management with Redux Toolkit
+- Data caching and auto-refetching using RTK Query
+- Clean, minimal, and responsive UI
+- Loading and error state handling
+- Modular and scalable folder structure
+
+---
+
+## 🔌 Product API Integration
+
+The **product section** is powered by your custom API and uses **RTK Query** to fetch data.
+
+### 📡 API Endpoint
+
+src/
+├── components/
+│   └── Button.tsx
+│   └── Button.css
+├── features/products
+│            └── productsApi.ts
+├── store/
+│   └── store.ts
+├── pages/bandagepage/
+│         └── Homepage.tsx
+│         └── Homepage.css
+│         └── Mediaquery.css
+├── App.tsx
+├── main.tsx
+├── index.css
+├── App.css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
