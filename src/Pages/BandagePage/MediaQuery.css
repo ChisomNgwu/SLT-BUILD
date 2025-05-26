@@ -876,7 +876,7 @@
 }
 
 /* mobile screens  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
 
     /* hero section */
@@ -910,7 +910,10 @@
     .best-services-wrapper {
         max-width: 100%;
         height: auto;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
     }
 
