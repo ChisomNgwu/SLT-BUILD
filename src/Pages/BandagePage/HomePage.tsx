@@ -1,9 +1,11 @@
+// react tools and hooks imports
 import { useState, } from 'react';
 import { useGetProductsQuery } from '../../features/products/productsApi';
 import { FaChevronDown, FaStar} from 'react-icons/fa';
 import { FaRegStar } from 'react-icons/fa6';
 import Button from  "../../components/Button";
 
+// images and icons imports
 import Logo from "../../../public/logo.svg";
 import Telephone from "../../assets/icons/telephone.png";
 import Email from "../../assets/icons/mail .png";
@@ -32,6 +34,9 @@ import SignalIcon from "../../assets/images/signal.png";
 import FeaturedCard1 from "../../assets/images/featured card 1.png";
 import FeaturedCard2 from "../../assets/images/featured card 2.png";    
 import FeaturedCard3 from "../../assets/images/featured card 3.png";
+import FeaturedCardMobile1 from "../../assets/images/featured-card-mobile 1.png";
+import FeaturedCardMobile2 from "../../assets/images/featured-card-mobile 2.png";
+import FeaturedCardMobile3 from "../../assets/images/featured-card-mobile 3.png";
 import UserPic from "../../assets/images/user pic.png";
 import Unsplash1 from "../../assets/images/unsplash 1.png";
 import Unsplash2 from "../../assets/images/unsplash 2.png";
@@ -46,7 +51,7 @@ import FacebookFilledIcon from "../../assets/icons/facebook-filled.png";
 import InstagramFilledIcon from "../../assets/icons/instagram filled.png";
 import TwitterFilledIcon from "../../assets/icons/twitter filled .png";
 
-
+// styles import
 import './HomePage.css';
 import './MediaQuery.css'; 
 
@@ -130,7 +135,7 @@ export default function HomePage () {
 
                      {/* Mobile-only navigation */}
                     <li className="mobile-nav"><a href="#" onClick={closeMobileMenu}>Home</a></li>
-                    <li className="mobile-nav"><a href="#products" onClick={closeMobileMenu}>Product</a></li>
+                    <li className="mobile-nav active-link"><a href="#products" onClick={closeMobileMenu}>Product</a></li>
                     <li className="mobile-nav"><a href="#cta" onClick={closeMobileMenu}>Pricing</a></li>
                     <li className="mobile-nav"><a href="#contacts" onClick={closeMobileMenu}>Contact</a></li>
                 </ul>
@@ -259,14 +264,27 @@ export default function HomePage () {
                     <h2 className='mobile'>Featured Products</h2>
                 </div>
                 <div className="featured-posts-wrapper">
-                    <div className="featured-posts-card">
+                    <div className="featured-posts-desktop">
+                        <div className="featured-posts-card">
                         <img src={FeaturedCard1} alt="post 1" />
+                        </div>
+                        <div className="featured-posts-card">
+                            <img src={FeaturedCard2} alt="post 2" />
+                        </div>
+                        <div className="featured-posts-card">
+                            <img src={FeaturedCard3} alt="post 3" />
+                        </div>
                     </div>
-                    <div className="featured-posts-card">
-                        <img src={FeaturedCard2} alt="post 2" />
-                    </div>
-                    <div className="featured-posts-card">
-                        <img src={FeaturedCard3} alt="post 3" />
+                    <div className="featured-products-mobile">
+                        <div className="featured-posts-card">
+                        <img src={FeaturedCardMobile1} alt="post 1" />
+                        </div>
+                        <div className="featured-posts-card">
+                            <img src={FeaturedCardMobile2} alt="post 2" />
+                        </div>
+                        <div className="featured-posts-card">
+                            <img src={FeaturedCardMobile3} alt="post 3" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -312,9 +330,15 @@ export default function HomePage () {
                 <div className="cta-container">
                     <div className="cta-wrapper">
                         <h6>Designing Better Experience</h6>
-                        <h2>Problems trying to resolve the conflict between </h2>
+                        <h2 className='cta-desktop-text'>Problems trying to resolve the conflict between </h2>
+                        <h2 className="cta-mobile-text">Problems <br />
+                            trying to resolve <br />
+                            the conflict <br />
+                            between 
+                        </h2>
+                        <h3 className="price-mobile">$16.48</h3>
                         <p>Problems trying to resolve the conflict between the two major realms of Classical physics: </p>
-                        <h3>$16.48</h3>
+                        <h3 className="price-desktop">$16.48</h3>
 
                         <Button
                             text='ADD YOUR CALL TO ACTION'

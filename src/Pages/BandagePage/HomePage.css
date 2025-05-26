@@ -409,7 +409,7 @@
 .featured-posts-container {
     width: 100%;
     max-width: 1440px;
-    height: 994px;
+    height: auto;
     margin-inline: auto;
     display: block;
     text-align: center;
@@ -440,11 +440,19 @@
     width: 100%;
     max-width: 1045px;
     margin: 0 auto;
-    height: 606px;
+    height: auto;
+}
+
+
+.featured-posts-desktop {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+.featured-products-mobile {
+    display: none;
 }
 
 .featured-posts-wrapper .featured-posts-card img {
@@ -606,6 +614,10 @@
     margin-right: 25px;
     height: 100px;
 }
+
+.cta-mobile-text {
+    display: none;
+}
 .cta-wrapper p {
     width: 447px;
     height: 40px;
@@ -614,6 +626,10 @@
     width: 80px;
     height: 32px;
     color: var(--secondary-200);
+}
+
+.price-mobile {
+    display: none;
 }
 
 /* footer section */
