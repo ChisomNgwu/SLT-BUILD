@@ -1,5 +1,4 @@
     // File: src/components/CTAButton/CTAButton.tsx
-
     import React from 'react';
     import './Button.css';
 
@@ -9,22 +8,25 @@
     size?: 'small' | 'medium' | 'large';
     onClick?: () => void;
     disabled?: boolean;
+    loading?: boolean;
     className?: string;
     }
 
     const Button: React.FC<ButtonProps> = ({
-    text = "ADD YOUR CALL TO ACTION",
+    text = "LOAD MORE PRODUCTS",
     variant = 'primary',
     size = 'medium',
     onClick,
     disabled = false,
+    loading = false,
     className = ''
     }) => {
     const buttonClasses = [
         'button',
         `button--${variant}`,
         `button--${size}`,
-        disabled ? '-button--disabled' : '',
+        (disabled || loading) ? 'button--disabled' : '',
+        loading ? 'button--loading' : '',
         className
     ].filter(Boolean).join(' ');
 
@@ -32,10 +34,35 @@
         <button
         className={buttonClasses}
         onClick={onClick}
-        disabled={disabled}
+        disabled={disabled || loading}
         type="button"
         >
-        {text}
+        {loading && (
+            <span className="button__spinner" aria-hidden="true">
+            <svg
+                className="button__spinner-svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <circle
+                cx="8"
+                cy="8"
+                r="6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeDasharray="37.7"
+                strokeDashoffset="37.7"
+                />
+            </svg>
+            </span>
+        )}
+        <span className={loading ? 'button__text--loading' : 'button__text'}>
+            {loading ? 'Loading...' : text}
+        </span>
         </button>
     );
     };

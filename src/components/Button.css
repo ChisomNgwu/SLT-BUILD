@@ -1,7 +1,5 @@
-    /* File: src/components/CTAButton/CTAButton.css */
 
     .button {
-
     border-radius: 1px;
     font-family: var(--font-family);
     font-weight: 700;
@@ -27,7 +25,6 @@
     background-color: var(--blue-text);
     color: var(--white-text);
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-    
     }
 
     .button--secondary {
@@ -41,7 +38,6 @@
     box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
     }
 
-
     /* Button Sizes */
     .button--small {
     width: 117px;
@@ -50,7 +46,6 @@
     border-bottom-right-radius: 5px;
     border-width: 1px;
     }
-
 
     .button--large {
     width: 292px;
@@ -61,7 +56,66 @@
     padding-left: 40px;
     }
 
-    /* Focus State */
+    /* Focus State - Remove border outline */
     .button:focus {
+    outline: none;
+    border: none;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    }
+
+    /* Active State - Remove border outline on click */
+    .button:active {
+    outline: none;
+    border: none;
+    }
+
+    /* Loading States */
+    .button--loading {
+    cursor: wait;
+    position: relative;
+    }
+
+    .button__spinner {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    }
+
+    .button__spinner-svg {
+    animation: button-spin 1s linear infinite;
+    }
+
+    .button__text--loading {
+    opacity: 0.7;
+    }
+
+    /* Keyframe animation for the spinning circle */
+    @keyframes button-spin {
+    0% {
+        transform: rotate(0deg);
+        stroke-dashoffset: 37.7;
+    }
+    50% {
+        stroke-dashoffset: 18.85;
+    }
+    100% {
+        transform: rotate(360deg);
+        stroke-dashoffset: 37.7;
+    }
+    }
+
+    /* Adjust spinner size for different button sizes */
+    .button--small .button__spinner-svg {
+    width: 12px;
+    height: 12px;
+    }
+
+    .button--medium .button__spinner-svg {
+    width: 16px;
+    height: 16px;
+    }
+
+    .button--large .button__spinner-svg {
+    width: 20px;
+    height: 20px;
     }
