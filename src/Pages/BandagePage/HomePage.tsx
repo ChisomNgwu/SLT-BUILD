@@ -73,7 +73,8 @@ export default function HomePage () {
     const [productLimit, setProductLimit] = useState(5);
     const { 
         data: productsResponse, 
-        isLoading: loading, 
+        isLoading: loading,
+        isFetching, 
         error 
     } = useGetProductsQuery(productLimit);
 
@@ -216,6 +217,7 @@ export default function HomePage () {
             <Button
                 className="load-more-btn"
                 onClick={handleLoadMore}
+                loading={loading || isFetching}
                 text="LOAD MORE PRODUCTS"
                 variant="primary"
                 size="large"
