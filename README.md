@@ -32,6 +32,8 @@ The **product section** is powered by your custom API and uses **RTK Query** to 
 
 ### 📡 API Endpoint
 
+
+### File Structure
 src/
 ├── components/
 │   └── Button.tsx
@@ -49,7 +51,7 @@ src/
 ├── index.css
 ├── App.css
 
-
+#### Build with love 💖 
 
 
 
