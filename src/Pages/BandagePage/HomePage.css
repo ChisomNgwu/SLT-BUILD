@@ -411,6 +411,7 @@
     max-width: 1440px;
     height: auto;
     margin-inline: auto;
+    padding-bottom: 80px;
     display: block;
     text-align: center;
 }
@@ -471,6 +472,7 @@
     width: 100%;
     max-width: 1128px;
     margin-inline: auto;
+    padding-top: 70px;
     height: 682px;
     padding-bottom: 80px;
 }
