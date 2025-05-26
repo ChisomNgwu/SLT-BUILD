@@ -120,19 +120,19 @@ export default function HomePage () {
                 </span>
                 
                 <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>Home</a></li>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>Shop <FaChevronDown /> </a></li>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>About</a></li>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>Blog</a></li>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>Contact</a></li>
-                    <li className="desktop-nav"><a href="" onClick={closeMobileMenu}>Pages</a></li>
+                    <li className="desktop-nav"><a href="#" onClick={closeMobileMenu}>Home</a></li>
+                    <li className="desktop-nav"><a href="#products" onClick={closeMobileMenu}>Shop <FaChevronDown /> </a></li>
+                    <li className="desktop-nav"><a href="#testimonials" onClick={closeMobileMenu}>About</a></li>
+                    <li className="desktop-nav"><a href="#featured" onClick={closeMobileMenu}>Blog</a></li>
+                    <li className="desktop-nav"><a href="#contacts" onClick={closeMobileMenu}>Contact</a></li>
+                    <li className="desktop-nav"><a href="#hero" onClick={closeMobileMenu}>Pages</a></li>
                     
 
                      {/* Mobile-only navigation */}
-                    <li className="mobile-nav"><a href="" onClick={closeMobileMenu}>Home</a></li>
-                    <li className="mobile-nav"><a href="" onClick={closeMobileMenu}>Product</a></li>
-                    <li className="mobile-nav"><a href="" onClick={closeMobileMenu}>Pricing</a></li>
-                    <li className="mobile-nav"><a href="" onClick={closeMobileMenu}>Contact</a></li>
+                    <li className="mobile-nav"><a href="#" onClick={closeMobileMenu}>Home</a></li>
+                    <li className="mobile-nav"><a href="#products" onClick={closeMobileMenu}>Product</a></li>
+                    <li className="mobile-nav"><a href="#cta" onClick={closeMobileMenu}>Pricing</a></li>
+                    <li className="mobile-nav"><a href="#contacts" onClick={closeMobileMenu}>Contact</a></li>
                 </ul>
                 <div className="nav-items">
                     <div className="login">
@@ -164,7 +164,7 @@ export default function HomePage () {
             </header> 
 
             {/* hero section */}
-            <main className="hero-section">
+            <main className="hero-section" id='hero'>
                 <div className="hero-wrapper">
                     <div className="hero-grid desktop-grid">
                         <img src={HeroImage1} alt="furniture1" />
@@ -182,7 +182,7 @@ export default function HomePage () {
             </main> 
 
     {/* featured   >  bestselling products */}
-    <section className="best-seller-products"> 
+    <section className="best-seller-products"  id="products"> 
         <div className="best-seller-products-header">
             <h4>Featured Products</h4>
             <h3>BESTSELLER PRODUCTS</h3>
@@ -252,7 +252,7 @@ export default function HomePage () {
             </section> 
 
             {/* featured posts  */}
-            <section className="featured-posts-container">
+            <section className="featured-posts-container"  id="featured">
                 <div className="featured-posts-header">
                     <h6>Practice Advice</h6>
                     <h2 className='desktop'>Featured Posts</h2>
@@ -272,7 +272,7 @@ export default function HomePage () {
             </section>
 
             {/* testimonials */}
-            <section className="testimonials-container">
+            <section className="testimonials-container"  id="testimonials">
                 <div className="testimonials-wrapper">
                     <div className="testimonial-box fluid">
                         <h3>What they say about us</h3>
@@ -308,7 +308,7 @@ export default function HomePage () {
             </section>
 
             {/* cta */}
-            <section className="cta-section">
+            <section className="cta-section" id="cta">
                 <div className="cta-container">
                     <div className="cta-wrapper">
                         <h6>Designing Better Experience</h6>
@@ -328,7 +328,7 @@ export default function HomePage () {
             </section>
 
             {/* footer section */}
-            <footer className="footer-section">
+            <footer className="footer-section" >
                 <div className="footer-container">
                     <section className="footer-topbar">
                         <div className="footer-topbar-container">
@@ -345,7 +345,7 @@ export default function HomePage () {
                         </div>
                     </section>
                     <hr />
-                    <section className="footer-main">
+                    <section className="footer-main" id="contacts">
                         <div className="footer-main-wrapper">
                             <div className="main-item item1">
                                 <h5>Contact Info</h5>
