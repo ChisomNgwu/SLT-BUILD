@@ -203,6 +203,10 @@
         height: 275px;
     }
 
+    .cta-wrapper h6 {
+        padding-top: 70px;
+    }
+
     .cta-wrapper h2 {
         width: 420px;
         height: auto;
@@ -665,7 +669,7 @@
 
     /* testimonials */
     .testimonials-container {
-        width: 600px;
+        width: 700px;
         max-width: 100%;
         margin-inline: auto;
         margin-bottom: 50px;
@@ -940,6 +944,11 @@
 /* mobile screens  */
 @media screen and (max-width: 760px) {
 
+    /* navbar  */
+        .navbar .functions {
+        padding-right: 26px;
+    }
+
     /* hero section */
     .mobile-grid img {
         width: 430px;
@@ -1058,3 +1067,11 @@
     }
 }
 
+/* mobile screens  */
+@media screen and (max-width: 321px) {
+
+    /* navbar  */
+        .navbar .functions {
+        padding-right: 16px;
+    }
+}
